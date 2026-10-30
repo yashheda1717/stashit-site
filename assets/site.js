@@ -18,6 +18,9 @@
     a.href = a.getAttribute("data-play") + "&referrer=" + enc(ref);
   });
 
+  /* ---- Apple devices: App Store button first (APPLE_STORE) ---- */
+  if (/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent || "")) d.documentElement.classList.add("apple");
+
   /* ---- Language choice (Stash-it!) ---- */
   d.querySelectorAll("[data-setlang]").forEach(function (a) {
     a.addEventListener("click", function (e) {
