@@ -330,8 +330,3 @@ button,input{font:inherit;color:inherit}
 /* English pages: never download Mukta just for the few Devanagari labels; system Devanagari is fine there */
 html[lang="en"]{--font:Figtree,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Devanagari",sans-serif}
 @media (min-width:980px){.stage{height:660px}.stage .p-front{--pw:340px}.stage .p-back{--pw:290px}}
-
-/* App Store button: Stashify for iPhone/iPad */
-.btn-ios{background:#0b0b0d;color:#fff;border:1px solid rgba(255,255,255,.18)}
-.btn-ios .t small{opacity:.8}
-html.apple .cta-row .btn-ios{order:-1}
